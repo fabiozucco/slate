@@ -92,17 +92,15 @@ html, body {
 
     input {
       background: $nav-bg;
-      border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
       padding: 7px 0 6px 30px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
       width: $nav-width - ($nav-padding*2);
       outline: none;
       color: $nav-text;
-      border-radius: 20px; /* ios has a default border radius */
+      border-radius: 15px; /* ios has a default border radius */
       background-color: $search-bg;
-      border: 0;
+      border: 1px solid $search-box-border-color;
     }
 
     &:before {
