@@ -61,6 +61,7 @@ html, body {
   background-color: $nav-bg;
   font-size: 13px;
   font-weight: bold;
+  border-right: 1px solid $nav-border;
 
   // language selector for mobile devices
   .lang-selector {
@@ -71,11 +72,19 @@ html, body {
     }
   }
 
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: $logo-general-margin;
+
   // This is the logo at the top of the ToC
-  .logo {
-    display: block;
-    max-width: 100%;
-    margin-bottom: $logo-margin;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+    }
   }
 
   &>.search {
@@ -352,9 +361,9 @@ html, body {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    // border-top: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    // background-color: #fdfdfd;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -393,8 +402,8 @@ html, body {
 
   hr {
     margin: 2em 0;
-    border-top: 2px solid $examples-bg;
-    border-bottom: 2px solid $main-bg;
+    // border-top: 2px solid $examples-bg;
+    // border-bottom: 2px solid $main-bg;
   }
 
   table {
@@ -512,6 +521,8 @@ html, body {
 // This is all the stuff that appears in the right half of the page
 
 .content {
+  padding: $padding-content;
+  
   &>div.highlight {
     clear:none;
   }
