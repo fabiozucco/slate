@@ -1,5 +1,5 @@
 ---
-title: API Reference de Testes
+title: Wonder API - Integração
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
