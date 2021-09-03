@@ -59,7 +59,7 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   border-right: 1px solid $nav-border;
 
@@ -94,19 +94,21 @@ html, body {
       background: $nav-bg;
       border-width: 0 0 1px 0;
       border-color: $search-box-border-color;
-      padding: 6px 0 6px 20px;
+      padding: 7px 0 6px 30px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
       width: $nav-width - ($nav-padding*2);
       outline: none;
       color: $nav-text;
-      border-radius: 0; /* ios has a default border radius */
+      border-radius: 20px; /* ios has a default border radius */
+      background-color: $search-bg;
+      border: 0;
     }
 
     &:before {
       position: absolute;
       top: 17px;
-      left: $nav-padding;
+      left: $nav-padding + 10px;
       color: $nav-text;
       @extend %icon-search;
     }
@@ -148,9 +150,9 @@ html, body {
   // styling of an unordered list because it is ugly.
   ul, li {
     list-style: none;
-    margin: 0;
+    // margin: 0;
     padding: 0;
-    line-height: 28px;
+    line-height: 32px;
   }
 
   li {
@@ -522,7 +524,7 @@ html, body {
 
 .content {
   padding: $padding-content;
-  
+
   &>div.highlight {
     clear:none;
   }
